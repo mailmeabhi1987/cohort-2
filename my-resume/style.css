@@ -27,6 +27,7 @@ body {
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    line-height: 1.1;
 }
 .header .content {
     color: #fff;
@@ -175,4 +176,51 @@ body {
 .footer p {
     color: #fff;
     text-transform: uppercase;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+    .education,
+    .skills,
+    .projects,
+    .contact {
+        width: 90%;
+    }
+    .education .content,
+    .skills .content,
+    .projects .content,
+    .contact .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 60px 20px;
+    }
+    .header .h1 {
+        font-size: 40px;
+    }
+    .header .content {
+        font-size: 16px;
+    }
+    .about {
+        padding: 40px 20px;
+    }
+    .education,
+    .skills,
+    .projects,
+    .contact {
+        width: 100%;
+        padding: 60px 20px;
+    }
+    .education .content,
+    .skills .content,
+    .projects .content,
+    .contact .content {
+        width: 100%;
+    }
+    .contact .content a {
+        word-break: break-all;
+    }
 }
